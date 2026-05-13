@@ -1,5 +1,4 @@
 ---
-type: context
 updated: 2026-05-13
 ---
 
@@ -8,16 +7,19 @@ updated: 2026-05-13
 > Šis ir pašreizējais konteksts. Atjauninu pēc katras sesijas.
 > Maksimāli ~500 vārdi, lai AI ātri saprot kur darbs apstājās.
 
-## HERMES — ātrā uzziņa
-- Vault: `/root/vault/`
-- Logi: `07-logs/YYYY/MM/YYYY-MM-DD.md`
-- Šodien: `05-tasks/today.md`
-- Inbox: `00-inbox/`
-- Projekti: faili ar `type: project`
-
 ## Šobrīd strādāju pie
 
-**Galvenais fokuss:** 7 dienu manuālais eksperiments — vai vienkārša Obsidian sistēma pietiek pirms Hermes uzstādīšanas
+**AI OS PLĀNS: 7/10 dienas pabeigts!**
+
+Līdz šim paveiktais (2026-05-13):
+- ✅ D1-D2: Vizuālais dashboard (today.md, CSS, DASHBOARD)
+- ✅ D3: Syncthing — telefons + dators sinhronizēti <30s
+- ✅ D4: Git + GitHub backup + auto-commit 22:00
+- ✅ D5: Hetzner CX22 (ubuntu-4gb-nbg1-1) — SSH, Syncthing
+- ✅ D6: Hermes v0.13.0 — darbojas, redz vaultu, atbild caur Telegram
+- ✅ D7: Telegram bot — šī saruna ir pierādījums
+
+**Nākamais: D8 (17. maijs)** — Daily digest cron + /today /done komandas
 
 **Jaunā ADHD-friendly today.md struktūra ieviesta 2026-05-11:**
 - TAGAD (1 uzdevums) → ŠODIEN → INBOX → DEADLINE TUVU → Auto-list
@@ -34,20 +36,25 @@ updated: 2026-05-13
 **Pieslēgtie projekti:**
 - [[lux-harmonia-cosmic-echoes]] — gaida Distrokid metadatu pabeigšanu
 - [[school-9th-grade-spring-2026]] — datu struktūru tēmas plāns
+- [[waldorf-school]] — 8. klases projekta darbs + HTML (jāizlabo 14. maijā)
 
 ## Šī nedēļa — prioritātes
 
 1. ✅ Obsidian vault uzbūvēts
-2. 🔄 DASHBOARD.md ar Dataview
-3. ⏳ Syncthing — telefons + dators
-4. ⏳ Git + GitHub backup
+2. ✅ DASHBOARD.md ar Dataview
+3. ✅ Syncthing — telefons + dators
+4. ✅ Git + GitHub backup
+5. ✅ Hetzner serveris
+6. ✅ Hermes + Telegram
+7. ⏳ D8: Daily digest cron + komandas
+8. ⏳ D10: VinkaFit projekta starts
 
 ## Atvērti pavedieni
 
 - [ ] Pabeigt Lux Harmonia metadatus Distrokid
 - [ ] Sagatavot kontroldarbu 9. klasei
-- [ ] Oracle Cloud konta izveide
-- [ ] Hermes uzstādīšana uz cloud
+- [ ] Uzstādīt Daily digest 8:00 (D8)
+- [ ] Izveidot /today un /done komandas (D8)
 
 ## Pēdējie lēmumi
 
@@ -57,6 +64,8 @@ updated: 2026-05-13
 - **2026-05-09:** Syncthing plānots Obsidian Sync vietā ($0 vs $48/g)
 - **2026-05-08:** Gemini API (bezmaksas) Hermes vajadzībām
 - **2026-05-07:** Atteicāmies no Hermes Desktop app (Windows bug)
+- **2026-05-12:** Ember Cyber krāsu palete apstiprināta
+- **2026-05-13:** D1-D7 pabeigti — sistēma (Obsidian → Syncthing → Hetzner → Hermes → Telegram) strādā
 
 ## Pieņemtā arhitektūra
 
@@ -67,8 +76,8 @@ Telefons + Dators + Cloud serveris
     ↕ Git
 GitHub (drošības kopija)
 
-Hermes (uz Oracle Cloud) → lasa/raksta vault
-n8n → orķestrē automatizācijas
+Hermes (uz Hetzner CX22) → lasa/raksta vault
+n8n → orķestrē automatizācijas (nākotnē)
 Google Drive → lielie faili (WAV, attēli)
 Chrome extension → Suno/Distrokid pipeline
 ```

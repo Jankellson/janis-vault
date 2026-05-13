@@ -21,6 +21,8 @@ tags: [skola, darbs, mācīšana]
 - [ ] Izlasīt stāstu no "Skandināvu mitoloģijas"
 - [ ] Pajautāt Annai, Serafīmai, Emīlijai par filca dzīvnieku
 - [ ] Roberta projekta darbs
+- [ ] **8. klasei — projekta darbs (jāizlabo)**
+- [ ] **8. klasei — HTML projekts (jāizlabo)**
 - [ ] Roberta kavējumu zīmes — atgādināt
 
 ## 📅 Nākamās stundas / pasākumi

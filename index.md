@@ -16,9 +16,10 @@ updated: 2026-05-09
 Pagaidu zona neapstrādātām piezīmēm. AI met visu šeit. Tukšojas dienā.
 
 ### 01-projects/
-Aktīvi projekti ar termiņiem.
+| Aktīvi projekti ar termiņiem.
 - [[lux-harmonia-cosmic-echoes]] — albuma release
 - [[school-9th-grade-spring-2026]] — semestra beigas
+- [[waldorf-school]] — Valdorfa skola (8. klase)
 - [[distrokid-helper-v2]] — Chrome extension (kods)
 
 ### 02-areas/
