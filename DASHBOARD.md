@@ -1,11 +1,12 @@
 ---
 type: dashboard
-updated: 2026-05-12
+updated: 2026-05-13
 cssclasses:
   - dashboard
 obsidianUIMode: preview
 tagad_task: ""
 inbox_capture: ""
+build_day_done: 7
 ---
 
 ```dataviewjs
@@ -68,13 +69,14 @@ dv.el("div", html);
 > > **🎯 TAGAD**
 > > `INPUT[text(placeholder(Ko es daru tieši šobrīd...)):tagad_task]`
 > >
-> > 📋 [[05-tasks/today|Šodien]] · 📓 [[07-logs/2026/05/2026-05-12|Šodienas log]]
+> > 📋 [[05-tasks/today|Šodien]] · 📓 `$= const n = new Date(), p = x => String(x).padStart(2,"0"); dv.fileLink("07-logs/"+n.getFullYear()+"/"+p(n.getMonth()+1)+"/"+n.getFullYear()+"-"+p(n.getMonth()+1)+"-"+p(n.getDate()), false, "Šodienas log")`
 >
 > > [!col]
 > > **⚡ ĀTRĀ PIEZĪME**
-> > `INPUT[text(placeholder(Brain dump — met visu šeit...)):inbox_capture]`
 > >
-> > *Vakarā 5 min — pārvieto vai izdzēs*
+> > [[00-inbox/inbox|📥 Atvērt inbox →]]
+> >
+> > *Met visu tur. Reizi nedēļā — pārvieto vai izdzēs.*
 
 ```dataviewjs
 const todayPath = "05-tasks/today";
@@ -86,7 +88,7 @@ const logs = dv.pages('"07-logs"').where(p => p.type === "log");
 const weekAgo = new Date(); weekAgo.setDate(weekAgo.getDate() - 7);
 const weekLogs = logs.where(p => p.file.cday.toMillis() > weekAgo.getTime()).length;
 
-const projects = dv.pages('"01-projects"').where(p => p.status === "active").length;
+const projects = dv.pages('"01-projects"').where(p => p.type === "project" && (p.status === "active" || p.status === "paused-revival")).length;
 
 dv.el("div", `
 <div class="jos-stats">
@@ -128,26 +130,30 @@ dv.el("div", `
 > > ```
 
 ```dataviewjs
-const start = new Date(2026, 4, 11);
-const now = new Date();
-const day = Math.min(10, Math.floor((now - start) / 86400000) + 1);
-const pct = Math.round((day / 10) * 100);
+const active = dv.page("01-projects/ai-os-build-plan");
 
-const planLink = "01-projects/ai-os-build-plan.md";
+if (!active) {
+  dv.el("div", "Nav aktīvu projektu", { cls: "jos-build-wrap" });
+} else {
+  const tasks = active.file.tasks;
+  const total = tasks.length;
+  const done = tasks.where(t => t.completed).length;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+  const link = active.file.path;
+  const name = active.title || active.file.name;
 
-let html = `<div class="jos-build-wrap">
+  let html = `<div class="jos-build-wrap">
   <div class="jos-build-header">
-    <span class="jos-build-title">🏗️ AI OS BUILD — 10 dienu sprints</span>
-    <span class="jos-build-sub">D${day}/10 · ${pct}% · <a class="internal-link" href="${planLink}">pilns plāns →</a></span>
+    <span class="jos-build-title">🚀 ${name}</span>
+    <span class="jos-build-sub">${done}/${total} uzdevumi · ${pct}% · <a class="internal-link" href="${link}">pilns plāns →</a></span>
   </div>
-  <div class="jos-build">`;
-for (let i = 1; i <= 10; i++) {
-  const cls = i < day ? "jos-day-done" : i === day ? "jos-day-active" : "jos-day-todo";
-  html += `<a class="jos-day ${cls} internal-link" href="${planLink}">D${i}</a>`;
+  <div class="jos-build">
+    <div class="jos-progress-bar" style="width:100%"><div class="jos-progress-fill" style="width:${pct}%"></div></div>
+  </div>
+  <span class="jos-progress-pct">${pct}%</span>
+  </div>`;
+  dv.el("div", html);
 }
-html += `<div class="jos-progress-bar"><div class="jos-progress-fill" style="width:${pct}%"></div></div>`;
-html += `<span class="jos-progress-pct">${pct}%</span></div></div>`;
-dv.el("div", html);
 ```
 
 > [!multi-column]
@@ -161,9 +167,9 @@ dv.el("div", html);
 > > | Meta-Bind + Dataview | ✅ |
 > > | Templater + Tasks | ✅ |
 > > | Syncthing | ✅ D3 |
-> > | Git + GitHub | ⏳ D4 |
-> > | Hetzner + Hermes | ⏳ D5–6 |
-> > | Telegram bot | ⏳ D7 |
+> > | Git + GitHub | ✅ D4 |
+> > | Hetzner + Hermes | ✅ D5–6 |
+> > | Telegram bot | ✅ D7 |
 >
 > > [!col]
 > > **📁 Pēdējās izmaiņas**
@@ -210,11 +216,8 @@ dv.el("div", html);
 > >     command: "graph:open"
 > > ```
 > >
-> > ```meta-bind-button
-> > label: "📓 Šodienas log"
-> > style: default
-> > id: btn-log
-> > actions:
-> >   - type: open
-> >     link: "[[07-logs/2026/05/2026-05-12]]"
+> > ```dataviewjs
+> > const n = new Date(), p = x => String(x).padStart(2,"0");
+> > const path = "07-logs/"+n.getFullYear()+"/"+p(n.getMonth()+1)+"/"+n.getFullYear()+"-"+p(n.getMonth()+1)+"-"+p(n.getDate());
+> > dv.el("a", "📓 Šodienas log", { attr: { href: path, class: "internal-link" } });
 > > ```

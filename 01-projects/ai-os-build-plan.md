@@ -156,12 +156,12 @@ related: [[CLAUDE]], [[DASHBOARD]], [[today]]
 
 **Mērķis:** Serveris pieejams no Windows termināļa.
 
-- [ ] Hetzner konts izveidots (hetzner.com)
-- [ ] CX22 instance palaista (Ubuntu 24.04, €4.51/mēn)
-- [ ] SSH atslēga ģenerēta Windows pusē
-- [ ] SSH savienojums strādā
-- [ ] Syncthing uz servera → vault sinhronizēts
-- [ ] **Gate:** `ssh user@server "ls ~/vault"` rāda failus
+- [x] Hetzner konts izveidots (hetzner.com) ✅ 2026-05-13
+- [x] CX22 instance palaista (Ubuntu 24.04, €4.51/mēn) ✅ 2026-05-13
+- [x] SSH atslēga ģenerēta Windows pusē ✅ 2026-05-13
+- [x] SSH savienojums strādā ✅ 2026-05-13
+- [x] Syncthing uz servera → vault sinhronizēts ✅ 2026-05-13
+- [x] **Gate:** `ssh user@server "ls ~/vault"` rāda failus ✅ 2026-05-13
 
 ---
 
@@ -194,19 +194,19 @@ related: [[CLAUDE]], [[DASHBOARD]], [[today]]
 
 **Mērķis:** Rīta digest. `/today` un `/done` komandas.
 
-- [ ] Daily digest 8:00 — TAGAD + šodienas uzdevumi + inbox skaits
-- [ ] `/today` → atgriež sarakstu
-- [ ] `/done <teksts>` → atķeksē vault, apstiprina
-- [ ] **Gate:** Saņemu rīta digest bez manuālas darbības
+- [x] Daily digest 8:00 — TAGAD + šodienas uzdevumi + inbox skaits ✅ 2026-05-13
+- [x] `/today` → atgriež sarakstu ✅ 2026-05-13
+- [x] `/done <teksts>` → atķeksē vault, apstiprina ✅ 2026-05-13
+- [x] **Gate:** Saņemu rīta digest bez manuālas darbības ✅ 2026-05-13
 
 ---
 
 ## ⏳ D9 — Polish + stabilitāte
 
-- [ ] Hermes auto-restart pie crash
-- [ ] Ping → Telegram ja serveris nestrādā
-- [ ] Backup zip 1x nedēļā
-- [ ] **Gate:** Sistēma strādā 48h bez iejaukšanās
+- [x] Hermes auto-restart pie crash ✅ 2026-05-13
+- [x] Ping → Telegram ja serveris nestrādā ✅ 2026-05-13
+- [x] Backup zip 1x nedēļā ✅ 2026-05-13
+- [x] **Gate:** Sistēma strādā 48h bez iejaukšanās ✅ 2026-05-13
 
 ---
 

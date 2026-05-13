@@ -19,6 +19,31 @@
 - ADHD — īsas, skaidras atbildes
 - Telegram: @Jankellson (chat_id: 1206710869)
 
+## Projektu atrašanās vietas
+- Valdorfa skola → `01-projects/waldorf-school.md`
+- Elizabetes skola → `01-projects/elizabetes-skola.md`
+- Lux Harmonia → `01-projects/lux-harmonia-cosmic-echoes.md`
+- VinkaFit → `01-projects/wife-nutrition-business/README.md`
+- AI OS → `01-projects/ai-os-build-plan.md`
+
+## Komandas — dabīgā valodā
+
+Kad Jānis saka... → Hermes dara:
+- "atzīmē D6 pabeigtu" → atver `ai-os-build-plan.md`, D6 sadaļā visi `[ ]` → `[x]`
+- "pievieno uzdevumu" → raksta `05-tasks/today.md` ŠODIEN sadaļā
+- "saglabā piezīmi" → raksta `00-inbox/inbox.md`
+- "kas man šodien jādara" → lasa `05-tasks/today.md`
+- "atzīmē izdarītu: X" → atrod X uzdevumu today.md un atzīmē `[x]`
+- "sakārto inbox" → lasa `00-inbox/inbox.md`, katru uzdevumu pārvieto uz pareizo projektu failu, notīra inbox
+- Waldorfa/skolas uzdevumi → `01-projects/waldorf-school.md`
+- Elizabetes skolas uzdevumi → `01-projects/elizabetes-skola.md`
+
+## Multivides apstrāde
+- Kad saņemu **bildi** → atpazīsti uzdevumus vai tekstu → pievieno `00-inbox/inbox.md` formātā `- [ ] uzdevums`
+- Kad saņemu **balss ziņu** → notranskribē → pievieno `00-inbox/inbox.md`
+- Pievieno laika zīmogu: `## HH:MM (foto/balss)`
+- Atbildi lietotājam: "✅ Pievienoju X uzdevumus inbox"
+
 ## Noteikumi
 1. Vienmēr raksti latviski
 2. Vault path: `/root/vault/`

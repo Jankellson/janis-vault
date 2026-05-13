@@ -1,50 +1,28 @@
 ---
 period: week
-week: 2026-W19
-updated: 2026-05-09
+week: 2026-W20
+updated: 2026-05-13
 ---
 
-# 📅 Šī nedēļa (9.-15. maijs 2026)
+# 📅 Šī nedēļa (12.–18. maijs 2026)
 
 ## 🎯 Galvenie mērķi nedēļā
 
-1. **Pabeigt Obsidian + Dashboard setup** (šodien-rīt)
-2. **Sinhronizācija ar telefonu** (sestdien)
-3. **Oracle Cloud + Hermes** (svētdien)
-4. **n8n + automatizācija** (pirmdien-otrdien)
+1. **Sistēmas iepazīšana** — Obsidian rutīna nostabilizējas
+2. **Drošība** — Telegram + OpenRouter tokenu rotācija
+3. **VinkaFit** — projekts vault struktūrā
+4. **Lux Harmonia** — Distrokid metadati
 
-## 📋 Uzdevumi pa dienām
+## 📋 Uzdevumi
 
-### Šodien — Piektdien
-- [ ] Plugins instalēti (Dataview, Tasks, Templater)
-- [ ] Dashboard strādā
-- [ ] Pirmie projekti pievienoti
-
-### Sestdien
-- [ ] Syncthing uz datora
-- [ ] Syncthing uz telefona + Obsidian app
-- [ ] Git + GitHub privāts repo
-
-### Svētdien
-- [ ] Oracle Cloud Free Tier konta izveide
-- [ ] Servera uzstādīšana (Ubuntu)
-- [ ] Hermes + Gemini API
-
-### Pirmdien
-- [ ] n8n instalācija
-- [ ] Pirmā automatizācija (e-pasta automātiska atbilde)
-- [ ] Tests
-
-### Otrdien
-- [ ] Telegram bot
-- [ ] Mobilā saskarne strādā
-- [ ] Chrome extension integrācija
-
-## 🎵 Mūzikas darbi
-- [ ] Lux Harmonia Cosmic Echoes Distrokid metadati
+- [ ] Rotēt Telegram token
+- [ ] Rotēt OpenRouter API atslēgu
+- [ ] D10: VinkaFit projekts sistēmā
+- [ ] Lux Harmonia Cosmic Echoes — Distrokid metadati
 - [ ] Vāka dizaina apstiprināšana
 
 ## 🏫 Skolas darbi
+
 - [ ] Datu struktūru kontroldarba sagatavošana
 - [ ] Stundu plāns nākamajai nedēļai
 

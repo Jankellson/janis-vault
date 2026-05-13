@@ -1,14 +1,14 @@
 ---
 period: today
-date: 2026-05-12
-updated: 2026-05-12
+date: 2026-05-13
+updated: 2026-05-13
 cssclasses:
   - daily-view
 tagad_task: ""
-inbox_capture: braindump
+inbox_capture: ""
 ---
 
-# ⚡ Šodien — 2026-05-12
+# ⚡ Šodien — 2026-05-13
 
 ---
 
@@ -17,7 +17,7 @@ inbox_capture: braindump
 > `INPUT[text(placeholder(Ko daru tagad... )):tagad_task]`
 > 
 > ---
-> - [x] *(pārvieto šeit vienu uzdevumu no ŠODIEN ↓)*
+> *(pārvieto šeit vienu uzdevumu no ŠODIEN ↓)*
 > 
 > *Kad pabeidzu — pārvelku nākamo*
 
@@ -27,64 +27,48 @@ inbox_capture: braindump
 > 
 > 5–7 uzdevumi ko plānoju izdarīt šodien. Pirmais solis = smieklīgi mazs.
 > 
-> - [x] D2: Meta-Bind — pārbaudīt vai INPUT lauki strādā
-> - [x] D2: DASHBOARD pogas — izmēģināt navigāciju
-> - [ ] Aizpildīt vakara log [[2026-05-12]]
+> - [x] Rotēt Telegram token (@BotFather → /mybots → revoke)
+> - [x] Rotēt OpenRouter API atslēgu (openrouter.ai/settings/keys) ✅ 2026-05-13
+> - [x] Atjaunināt ~/.hermes/.env ar jaunajiem tokeniem ✅ 2026-05-13
+> - [x] Iepazīties ar sistēmu — Obsidian puse ✅ 2026-05-13
+> - [ ] D10: VinkaFit projekts vault struktūrā
 
 ---
 
 > [!inbox] 📥 INBOX — brain dump
 > 
-> `INPUT[text(placeholder(Met visu šeit. Nedomā par kategoriju...)):inbox_capture]`
+> [[00-inbox/inbox|📥 Atvērt inbox →]]
 > 
-> ---
 > *(vakarā 5 min — pārvieto vai izdzēs)*
 
 ---
 
 > [!deadline] ⚠️ DEADLINE TUVU
 > 
-> Uzdevumi ar konkrētu termiņu < 14 dienas.
-> 
-> - [x] *Pagaidām tukšs*
+> *(pagaidām tukšs)*
 
 ---
 
 > [!rutinas] 🔄 IKDIENAS RUTĪNAS
 > 
-> - [ ] Aizpildīt vakara log [[2026-05-12]] 🔁 every day
+> - [ ] Aizpildīt vakara log [[07-logs/2026/05/2026-05-13|2026-05-13]] 🔁 every day
 > - [ ] Pārbaudīt INBOX un iztukšot 🔁 every day
-
----
-
-> [!projekts] 🚀 AKTĪVIE PROJEKTI
-> 
-> | | Projekts | Nākamais solis |
-> |---|----------|----------------|
-> | 🟠 | [[AI OS Build Plan\|AI OS — 10 dienu plāns]] | D3: Syncthing |
-> | 🎵 | [[lux-harmonia-cosmic-echoes\|Lux Harmonia]] | Manuāli |
-> | 🥗 | [[wife-nutrition-business/README\|VinkaFit]] | 19. maijā aktīvs |
-> | 🔧 | [[../../../Desktop/distrokid/suno-distrokid-extension/README\|Distrokid Helper]] | Polish fāze |
 
 ---
 
 ## 📊 Visi atvērtie uzdevumi (auto)
 
-```dataview
-TASK
-FROM ""
-WHERE !completed
-  AND !contains(file.path, "today")
-  AND !contains(file.path, "04-archive")
-  AND !contains(file.path, "ai-os-build-plan")
-  AND !contains(file.path, "99-templates")
-  AND !contains(file.path, "DASHBOARD")
-  AND !contains(file.path, "hot")
-  AND !contains(file.path, "index")
-  AND !contains(file.path, "README")
-GROUP BY file.folder
-SORT due ASC
-LIMIT 20
+> Lai **dzēstu** uzdevumu — klikšķini uz faila nosaukuma (oranžais) → atrodi tur → dzēs rindiņu.
+
+```dataviewjs
+const tasks = dv.pages('"05-tasks"')
+  .where(p => !p.file.path.includes("today"))
+  .flatMap(p => p.file.tasks.where(t => !t.completed).map(t => ({task: t, file: p.file})));
+
+for (const {task, file} of tasks) {
+  dv.el("div", `☐ ${task.text} — ${dv.fileLink(file.path, false, file.name)}`, {cls: "task-row"});
+}
+if (tasks.length === 0) dv.el("p", "✅ Visi uzdevumi izdarīti!");
 ```
 
 ---
@@ -94,7 +78,7 @@ LIMIT 20
 1. **Atķeksē** kas ir pabeigts šodien
 2. **Nepabeigto** no ŠODIEN → pārvieto uz rītdienu **vai izdzēs**
 3. **Iztukšo INBOX** — vai uz konkrētiem failiem, vai izdzēs
-4. **Aizpildi vakara log:** [[2026-05-12]]
+4. **Aizpildi vakara log:** [[07-logs/2026/05/2026-05-13|2026-05-13]]
 5. **TAGAD sadaļu atstāj tukšu** rītam
 
 > Šaubu gadījumā: **izdzēs.** Lai paliek tikai tas kas patiešām svarīgs.
