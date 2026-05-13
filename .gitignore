@@ -1,0 +1,36 @@
+# Obsidian workspace (lokāli iestatījumi — nav jābackupē)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/*/data.json.bak
+
+# Meta-Bind temp
+.obsidian/plugins/obsidian-meta-bind-plugin/cache/
+
+# Environment variables un secrets
+.env
+*.env
+*.secret
+
+# Temp faili
+*.tmp
+*.temp
+~$*
+
+# OS faili
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Syncthing
+.stfolder
+.stignore
+.stversions/
+
+# Lielāki binaries (ja kādreiz pievienosi)
+*.exe
+*.dmg
+*.zip
+*.7z
+
+# Klientu privātie dati (papildu drošība)
+01-projects/wife-nutrition-business/clients/

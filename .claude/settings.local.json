@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Read(C:\\Users\\Janis Jekabsons\\ai-projects\\**)",
+      "Read(C:\\Users\\Janis Jekabsons\\Desktop\\**)",
+      "Read(C:\\Users\\Janis Jekabsons\\.claude\\**)",
+      "Bash(ls **)",
+      "Bash(dir **)",
+      "Bash(cat **)",
+      "Bash(python **)",
+      "Bash(python3 **)",
+      "Bash(node **)",
+      "Bash(npm **)",
+      "Bash(git **)",
+      "Bash(pip **)",
+      "Bash(pip3 **)",
+      "PowerShell(Get-ChildItem **)",
+      "PowerShell(Get-Content **)",
+      "PowerShell(Test-Path **)",
+      "PowerShell(Copy-Item **)",
+      "PowerShell(Move-Item **)",
+      "PowerShell(New-Item **)",
+      "PowerShell(Remove-Item **)"
+    ]
+  }
+}
