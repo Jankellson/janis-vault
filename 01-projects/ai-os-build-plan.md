@@ -143,12 +143,12 @@ related: [[CLAUDE]], [[DASHBOARD]], [[today]]
 
 **Mērķis:** Vault automātiski backupējas uz GitHub katru vakaru.
 
-- [ ] Git instalēts (`git --version` strādā)
-- [ ] GitHub privāts repo izveidots
-- [ ] `.gitignore` iestatīts (workspace.json, .env, *.tmp)
-- [ ] Pirmais commit + push
-- [ ] Auto-commit skripts (22:00 katru vakaru)
-- [ ] **Gate:** GitHub repo rāda commit pēdējo 3 dienu laikā
+- [x] Git instalēts (`git --version` strādā) ✅ 2026-05-13
+- [x] GitHub privāts repo izveidots ✅ 2026-05-13
+- [x] `.gitignore` iestatīts (workspace.json, .env, *.tmp) ✅ 2026-05-13
+- [x] Pirmais commit + push ✅ 2026-05-13
+- [x] Auto-commit skripts (22:00 katru vakaru) ✅ 2026-05-13
+- [x] **Gate:** GitHub repo rāda commit pēdējo 3 dienu laikā ✅ 2026-05-13
 
 ---
 
