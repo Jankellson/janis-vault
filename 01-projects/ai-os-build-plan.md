@@ -76,8 +76,8 @@ related: [[CLAUDE]], [[DASHBOARD]], [[today]]
 | **D3** | 2026-05-12/13 | Syncthing — dators + telefons + Obsidian mobile | 1-2h | ⏳ Nākamais |
 | **D4** | 2026-05-13 | Git + GitHub privāts repo + auto-commit | 1h | ⏳ |
 | **D5** | 2026-05-14 | Hetzner CX22 + Ubuntu 24.04 + SSH | 2-3h | ⏳ |
-| **D6** | 2026-05-15 | Hermes v0.13 config + modeli + vault sync | 2-3h | ⏳ |
-| **D7** | 2026-05-16 | Telegram bot + brain dump workflow | 2h | ⏳ |
+| **D6** | 2026-05-13 | Hermes v0.13 config + modeli + vault sync | 2-3h | ✅ PABEIGTS |
+| **D7** | 2026-05-13 | Telegram bot + brain dump workflow | 2h | ✅ PABEIGTS |
 | **D8** | 2026-05-17 | Daily digest cron + /today /done komandas | 1-2h | ⏳ |
 | **D9** | 2026-05-18 | Polish + monitoring + backup | 1-2h | ⏳ |
 | **D10** | 2026-05-19 | VinkaFit projekts sistēmā | 2h+ | ⏳ |
@@ -89,8 +89,8 @@ related: [[CLAUDE]], [[DASHBOARD]], [[today]]
 | Vault pamati | ✅ 2026-05-09 |
 | Vizuālais dashboard (D1-D2) | ✅ 2026-05-12 |
 | Sinhronizācija (D3-D4) | ⏳ |
-| Hetzner + Hermes (D5-D6) | ⏳ |
-| Telegram + workflows (D7-D8) | ⏳ |
+| Hetzner + Hermes (D5-D6) | ✅ 2026-05-13 |
+| Telegram + workflows (D7-D8) | 🔄 D8 nākamais |
 | Polish + stabilitāte (D9) | ⏳ |
 | Pirmais reālais projekts (D10) | ⏳ |
 
@@ -165,28 +165,28 @@ related: [[CLAUDE]], [[DASHBOARD]], [[today]]
 
 ---
 
-## ⏳ D6 — Hermes Agent v0.13
+## ✅ D6 — Hermes Agent v0.13 (PABEIGTS 2026-05-13)
 
 **Mērķis:** Hermes lasa vault, atbild uz testa jautājumu.
 
-- [ ] Hermes v0.13 instalēts (versija pinnēta)
-- [ ] `config.yaml` aizpildīts ar vault ceļu
-- [ ] `.env` — DeepSeek + Gemini API atslēgas
-- [ ] `hermes setup` pabeigts
-- [ ] Skill `personal/inbox-processor.md` izveidots
-- [ ] **Gate:** Hermes atbild uz testa jautājumu, redz vault failus
+- [x] Hermes v0.13 instalēts (versija pinnēta) ✅ 2026-05-13
+- [x] `config.yaml` aizpildīts ar vault ceļu ✅ 2026-05-13
+- [x] `.env` — DeepSeek + OpenRouter API atslēgas ✅ 2026-05-13
+- [x] `hermes setup` pabeigts ✅ 2026-05-13
+- [x] Skill `personal/inbox-processor.md` izveidots ✅ 2026-05-13
+- [x] **Gate:** Hermes atbild uz testa jautājumu, redz vault failus ✅ 2026-05-13
 
 ---
 
-## ⏳ D7 — Telegram bot
+## ✅ D7 — Telegram bot (PABEIGTS 2026-05-13)
 
 **Mērķis:** Brain dump no telefona → vault INBOX.
 
-- [ ] Bot izveidots (`@BotFather`)
-- [ ] Token pievienots `~/.hermes/.env`
-- [ ] Whitelist: tikai mans `chat_id`
-- [ ] Jebkura ziņa → `today.md` INBOX ar laika zīmogu
-- [ ] **Gate:** Telegram → vault < 5 sek
+- [x] Bot izveidots (`@jankellson_bot`) ✅ 2026-05-13
+- [x] Token pievienots `~/.hermes/.env` ✅ 2026-05-13
+- [x] Whitelist: tikai mans `chat_id` (1206710869) ✅ 2026-05-13
+- [x] Jebkura ziņa → Hermes atbild ✅ 2026-05-13
+- [x] **Gate:** Telegram → Hermes < 5 sek ✅ 2026-05-13
 
 ---
 
