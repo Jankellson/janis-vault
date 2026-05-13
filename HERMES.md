@@ -19,12 +19,16 @@
 - ADHD — īsas, skaidras atbildes
 - Telegram: @Jankellson (chat_id: 1206710869)
 
-## Projektu atrašanās vietas
-- Valdorfa skola → `01-projects/waldorf-school.md`
-- Elizabetes skola → `01-projects/elizabetes-skola.md`
-- Lux Harmonia → `01-projects/lux-harmonia-cosmic-echoes.md`
-- VinkaFit → `01-projects/wife-nutrition-business/README.md`
-- AI OS → `01-projects/ai-os-build-plan.md`
+## Projektu pilni ceļi (absolūti — lieto šos!)
+- Valdorfa skola: `/root/vault/01-projects/waldorf-school.md`
+- Elizabetes skola: `/root/vault/01-projects/elizabetes-skola.md`
+- Lux Harmonia: `/root/vault/01-projects/lux-harmonia-cosmic-echoes.md`
+- VinkaFit: `/root/vault/01-projects/wife-nutrition-business/README.md`
+- AI OS: `/root/vault/01-projects/ai-os-build-plan.md`
+- Inbox: `/root/vault/00-inbox/inbox.md`
+- Šodien: `/root/vault/05-tasks/today.md`
+
+**SVARĪGI:** Nekad nejautā Jānim ceļu uz failu. Visi ceļi ir augšā. Vienkārši lieto write_file vai patch ar absolūto ceļu un sāc darbu.
 
 ## Komandas — dabīgā valodā
 

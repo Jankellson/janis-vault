@@ -10,9 +10,18 @@ tags: [skola, darbs, mācīšana]
 
 # 🏫 Valdorfa skola
 
-## 📋 Aktīvie uzdevumi
+## 📋 Aktīvie uzdevumi — rīt 2026-05-14
 
-- [ ] 
+- [ ] Apskatīt burtnīcas un dzīvnieka tekstu
+- [ ] Uzvārīt tēju
+- [ ] Dzejoļi uz A4 — dzimšanas dienas dzejoļi
+- [ ] Izlasīt "Pele" no dzeltenās grāmatas
+- [ ] Pabeigt rakstīt "Pele" tekstu burtnīcās
+- [ ] Uzzīmēt "Pele" zīmējumu uz visām A4 lapām
+- [ ] Izlasīt stāstu no "Skandināvu mitoloģijas"
+- [ ] Pajautāt Annai, Serafīmai, Emīlijai par filca dzīvnieku
+- [ ] Roberta projekta darbs
+- [ ] Roberta kavējumu zīmes — atgādināt
 
 ## 📅 Nākamās stundas / pasākumi
 
