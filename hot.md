@@ -1,11 +1,19 @@
 ---
-updated: 2026-05-11
+type: context
+updated: 2026-05-13
 ---
 
 # 🔥 Hot Context
 
 > Šis ir pašreizējais konteksts. Atjauninu pēc katras sesijas.
 > Maksimāli ~500 vārdi, lai AI ātri saprot kur darbs apstājās.
+
+## HERMES — ātrā uzziņa
+- Vault: `/root/vault/`
+- Logi: `07-logs/YYYY/MM/YYYY-MM-DD.md`
+- Šodien: `05-tasks/today.md`
+- Inbox: `00-inbox/`
+- Projekti: faili ar `type: project`
 
 ## Šobrīd strādāju pie
 
